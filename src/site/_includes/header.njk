@@ -1,0 +1,70 @@
+{%
+  set linkList = [
+    { "url": "/", "text": "Home" },
+    { "url": "/conf/", "text": "Jamstack Conf 2022" },
+    { "url": "/women-of-jamstack/", "text": "Women of Jamstack"},
+    { "url": "/community/", "text": "Community" }
+  ]
+%}
+
+<header class="page-header md:flex md:flex-col md:h-screen">
+
+  <a href="/" class="flex  md:justify-center items-center text-white hover:text-pink-900 mx-8 py-8">
+    {# <svg role="img" aria-hidden="true" focusable="false" width="163" height="31">
+      <use xlink:href="#logo-jamstack"></use>
+    </svg>
+    <span class="sr-only">Jamstack</span> #}
+    <img src="../../img/logo/svg/logo.jpeg" class="w-16 flex md:w-40"/>
+  </a>
+
+  <details open="open" data-force-state="data-force-state" data-force-state-closed="(max-width: 47.9375em)" class="md:flex-grow">
+    <summary class="summary-no-arrow md:hidden absolute top-4 right-0 p-8">
+      <svg width="22" height="31" viewbox="0 0 22 21" fill="none" class="summary-swap-closed">
+        <rect width="22" height="3" fill="white"/>
+        <rect y="18" width="22" height="3" fill="white"/>
+        <rect y="9" width="22" height="3" fill="white"/>
+      </svg>
+
+      <svg width="22" height="31" viewbox="0 0 18 19" fill="none" class="summary-swap-open">
+        <rect y="16.7217" width="22" height="3" transform="rotate(-48.3434 0 16.7217)" fill="white"/>
+        <rect width="22" height="3" transform="matrix(0.664665 0.747142 0.747142 -0.664665 0.431641 1.9939)" fill="white"/>
+      </svg>
+
+      <span class="sr-only">Menu</span>
+    </summary>
+
+  <div class="flex flex-col justify-between h-full">
+    <nav class="sm:flex sm:flex-col page-nav">
+      {% include "navigation-links.njk" %}
+    </nav>
+    <div>
+      <div class="self w-ful">
+        <div class="text-center text-sm mb-4 text-gray-300">Connect with us</div>
+        <div class="flex justify-center w-full">
+          <div class="grid grid-cols-3 divide-x divide-gray-700 text-gray-300">
+            <a href="https://discord.gg/jamstack" target="_BLANK" rel="noopener" class="flex items-center justify-center p-4 hover:text-pink-500">
+
+              <svg role="img" aria-label="Discord" focusable="false" width="36" height="36" class="fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            </a>
+            <a href="https://twitter.com/jamstackconf" target="_BLANK" rel="noopener" class="flex items-center justify-center p-4 hover:text-pink-500">
+              <svg role="img" aria-label="Twitter" focusable="false" width="34" height="28" class="fill-current">
+                <use xlink:href="#logo-twitter"></use>
+              </svg>
+            </a>
+
+            <a href="https://github.com/jamstack/jamstack.org" target="_BLANK" rel="noopener" class="flex items-center justify-center p-4 hover:text-pink-500">
+              {# <svg role="img" aria-label="GitHub" focusable="false" width="36" height="36" class="fill-current">
+              <use xlink:href="#logo-github"></use>
+            </svg> #}
+              <svg role="img" aria-label="GitHub" focusable="false" width="36" height="36" class="fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </details>
+</header>

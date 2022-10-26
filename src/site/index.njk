@@ -1,0 +1,88 @@
+---
+title: For fast and secure sites
+layout: layouts/base.njk
+---
+
+{% import "components/ticker.njk" as ticker %}
+{% import "components/section-heading.njk" as section %}
+{% import "components/zinger-cta.njk" as zinger %}
+
+<section class="my-10 p-0">
+  {{ ticker.icons() }}
+  {{ ticker.main() }}
+</section>
+
+<section class="relative p-10 mb-16">
+  <div class="p-2 rounded-lg bg-gradient-jams" w-full>
+    <div class="flex flex-col bg-blue-900 p-10 text-xl">
+      <a class="border-b-0" name="what-is-jamstack">
+        <h1>What is <span class="font-extrabold text-transparent bg-clip-text bg-gradient-jams">Jamstack</span>?</h1>
+      </a>
+      <p>
+        Jamstack is an architectural approach that decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability.
+      </p>
+      <p>
+        Jamstack removes the need for business logic to dictate the web experience.
+      </p>
+      <p>
+        It enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.</p>
+      </p>
+    </div>
+  </div>
+</section>
+<section class="relative p-10 mb-16">
+  <div class="p-2 rounded-lg bg-gradient-jams" w-full>
+    <div class="flex flex-col bg-blue-900 p-10 text-xl">
+      <a class="border-b-0" name="what-is-jamstack">
+        <h1>What is <span class="font-extrabold text-transparent bg-clip-text bg-gradient-jams">Jamstack Kolachi</span>?</h1>
+      </a>
+      <p>
+       This group wants to hold big Jamstack-related community events in Karachi, both online and in person, for JavaScript enthusiasts.
+      </p>
+      <p>
+      This is the first event of its kind in Pakistan, and we hope to create a vibrant tech community by hosting inspiring jamstacks and collaborating with our fellow developers to create game-changing applications.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="mb-10">
+  <div class="border-2 border-white block rounded-xl shadow-lg text-center overflow-hidden">
+    <a href="/conf/">
+      <img src="/img/conf-2022-tout-new.png" alt="Jamstack Conf 2022, 7-8 November, San Francisco and online" width="1500" height="600" />
+    </a>
+    <h2 class="mt-8">Join us at Jamstack Conf!</h2>
+    <p class="text-lg md:text-xl mb-5 w-2/3 md:w-1/2 mx-auto">
+      Join 20,000+ web developers for two days dedicated to building modern web projects.
+    </p>
+    <p class="mb-5">
+      <a href="/conf/" class="cta">Attend Jamstack Conf</a>
+    </p>
+  </div>
+</section>
+<section class="mb-10">
+  <div class="border-2 border-white block rounded-xl shadow-lg text-center overflow-hidden">
+    <a href="/conf/">
+      <img src="/img/KOLACHI_SPONSOR.png" alt="Jamstack Conf 2022, 7-8 November, San Francisco and online" width="1500" height="600" />
+    </a>
+ 
+   
+  </div>
+</section>
+
+{% include "components/join-the-movement.njk" %}
+
+<section class=" mb-16">
+  <div class="md:w-8/12 mx-auto">
+    <h2>The Roots of Jamstack</h2>
+    <p class="mt-6 mb-8">
+      <a href="https://www.netlify.com/authors/matt-biilmann/">Matt Biilmann</a> took the concept of Jamstack mainstream with his presentation at Smashing Conf 2016. Watch the quintessential introduction to the Jamstack.
+    </p>
+    <div class="videowrapper mb-8">
+      <div data-lazyiframe src="https://player.vimeo.com/video/163522126?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Mathias Biilmann Smashing Conf 2016 talk video: The New Front-End Stack">
+        <a href="https://vimeo.com/163522126">Watch <em>Mathias Biilmann Smashing Conf 2016 talk video: The New Front-End Stack</em> on Vimeo</a>
+      </div>
+    </div>
+    <a href="/resources/" class="cta">See more videos and resources</a>
+  </div>
+</section>
